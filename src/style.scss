@@ -1,0 +1,204 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+body {
+    font-family: 'Alumni Sans Inline One', cursive;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid #121212;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba($color: #121212, $alpha: 0.4);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.information,
+.result {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.information {
+    align-items: left;
+}
+
+.result {
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 22px;
+    color: #121212;
+    font-weight: 400;
+}
+
+#price {
+    width: 50%;
+    padding: 10px 5px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.confirm-btn {
+    width: 100%;
+    border: 1px solid #121212;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba($color: #121212, $alpha: 0.4);
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.confirm-btn:hover {
+    background-color: #f05d09;
+}
+
+.quality-pic {
+    margin-bottom: 30px;
+}
+
+.q1, .q2, .q3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 3px solid #121212;
+    background-color: #f0ec09;
+}
+
+.q1 {
+    background-color: #fd0707;
+}
+
+.q2 {
+    background-color: #f0ec09;
+}
+
+.q3 {
+    background-color: #036618;
+}
+
+.tip-value {
+    font-size: 70px;
+}
