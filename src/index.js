@@ -2,38 +2,43 @@ const quality = document.querySelector('#quality');
 const qualityPic = document.querySelector('.quality-pic');
 const confirm = document.querySelector('.confirm-btn');
 const sumVal = document.querySelector('#price');
-let sumFlag = false;
+
 
 const valueTab = [5, 10, 20];
 
 
-sumVal.addEventListener('change', function() {
-    if (sumVal.value) {
-        // sumFlag = true
-        confirm.addEventListener('click', function() {
-      
+sumVal.addEventListener('change', function () {
+
+    const sumInput = sumVal.value
+
+    if (sumInput) {
+
+        confirm.addEventListener('click', function () {
+
+
+
             if (quality.value == 1) {
                 calculate(valueTab[0])
             }
-        
+
             if (quality.value == 2) {
                 calculate(valueTab[1])
             }
-        
+
             if (quality.value == 3) {
                 calculate(valueTab[2])
             }
-        
-        })
-        
-    }
-  
 
- 
+        })
+
+    }
+
+
+
 })
 
 
-quality.addEventListener('change', function() {
+quality.addEventListener('change', function () {
     if (quality.value == 1) {
         qualityPic.classList.add('q1')
         qualityPic.classList.remove('q2')
@@ -60,7 +65,5 @@ function calculate(q) {
     let result = (sum * q) / 100;
 
     let tip = document.querySelector('.tip-value');
-    tip.innerHTML = Math.round(result)
-
-    console.log(result)
+    tip.innerHTML = Math.round(result) +' $'
 }

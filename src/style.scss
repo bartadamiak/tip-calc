@@ -93,7 +93,7 @@ video {
 
 body {
     font-family: 'Alumni Sans Inline One', cursive;
-    background-color: #20164d;
+    background-color: #FFFFFF;
 }
 
 .container {
@@ -106,7 +106,8 @@ body {
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
-    background-color: #5a3274;
+    background-color: #ffffff;
+    margin-top: 20px;
 }
 
 .information,
@@ -129,7 +130,7 @@ body {
 
 label {
     font-size: 22px;
-    color: #ffffff;
+    color: #121212;
     font-weight: 400;
 }
 
@@ -137,12 +138,17 @@ label {
     width: 100%;
     padding: 10px 5px;
     border: 1px solid #cccccc;
-    border-radius: 20px;
+    border-radius: 5px;
     outline: none;
-    font-size: 40px;
+    font-size: 20px;
     margin: 20px 0;
-    background-color: #646ff7;
-    color: #ffffff;
+    background-color: #f1f1f1;
+    color: #121212;
+}
+
+#price::placeholder {
+    color: #cccccc;
+    font-size: 20px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -166,18 +172,19 @@ input[type="range"] {
 .confirm-btn {
     width: 100%;
     border: 1px solid #121212;
-    border-radius: 20px;
-    font-size: 30px;
+    border-radius: 5px;
+    font-size: 20px;
     background-color: #ffffff;
     cursor: pointer;
-    box-shadow: 0px 0px 10px rgba($color: #121212, $alpha: 0.4);
+    box-shadow: 0px 0px 5px rgba($color: #121212, $alpha: 0.4);
     margin-bottom: 30px;
     transition: 0.3s;
+    padding: 20px;
 }
 
 .confirm-btn:hover {
-    background-color: #646ff7;
-    color: #fff;
+    box-shadow: 0px 0px 20px rgba($color: #121212, $alpha: 0.4);
+    
 }
 
 .quality-pic {
@@ -188,23 +195,31 @@ input[type="range"] {
     width: 100px;
     height: 100px;
     border-radius: 100px;
-    border: 3px solid #121212;
-    background-color: #f0ec09;
+    
 }
 
 .q1 {
-    background-color: #fd0707;
+    background-image: url('images/sad.png');
+    background-size: contain;
 }
 
 .q2 {
-    background-color: #f0ec09;
+    background-image: url('images/sceptic.png');
+    background-size: contain;
 }
 
 .q3 {
-    background-color: #036618;
+    background-image: url('images/happiness.png');
+    background-size: contain;
 }
 
 .tip-value {
-    font-size: 70px;
-    color: #ffffff;
+    font-size: 40px;
+    color: #121212;
+}
+
+footer {
+    background-color: #121212;
+    color: #f1f1f1;
+
 }
