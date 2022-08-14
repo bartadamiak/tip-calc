@@ -1,1 +1,1 @@
-Tip calculator - in progress
+http://bartadamiak.biz.pl/tip
